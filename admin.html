@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <nav id="navbar" class="dashboard-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/NewSM_Logo.png" alt="logo">
+                <span>Admin Portal</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#users">User Management</a></li>
+                <li><a href="#courses">Course Management</a></li>
+                <li><a href="#reports">Reports</a></li>
+                <li><a href="index.html" class="logout-btn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">⚙️</div>
+                <div class="user-details">
+                    <h3>Admin User</h3>
+                    <p>System Administrator</p>
+                    <span class="user-id">ID: ADM2024001</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#overview" class="nav-item active">
+                    <span class="nav-icon">📊</span>
+                    <span>Overview</span>
+                </a>
+                <a href="#users" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>User Management</span>
+                </a>
+                <a href="#courses" class="nav-item">
+                    <span class="nav-icon">📚</span>
+                    <span>Course Management</span>
+                </a>
+                <a href="#reports" class="nav-item">
+                    <span class="nav-icon">📈</span>
+                    <span>Reports & Analytics</span>
+                </a>
+                <a href="#system" class="nav-item">
+                    <span class="nav-icon">⚙️</span>
+                    <span>System Settings</span>
+                </a>
+                <a href="#profile" class="nav-item">
+                    <span class="nav-icon">👤</span>
+                    <span>Admin Profile</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+            <section id="overview" class="dashboard-section active">
+                <div class="section-header">
+                    <h1>Admin Dashboard</h1>
+                    <p>System overview and management controls</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <h3>Total Users</h3>
+                            <span class="stat-number">356</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-info">
+                            <h3>Students</h3>
+                            <span class="stat-number">320</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👨‍🏫</div>
+                        <div class="stat-info">
+                            <h3>Teachers</h3>
+                            <span class="stat-number">25</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📚</div>
+                        <div class="stat-info">
+                            <h3>Active Courses</h3>
+                            <span class="stat-number">42</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>System Status</h3>
+                        <div class="status-list">
+                            <div class="status-item">
+                                <span>Database</span>
+                                <span class="status online">Online</span>
+                            </div>
+                            <div class="status-item">
+                                <span>Web Server</span>
+                                <span class="status online">Online</span>
+                            </div>
+                            <div class="status-item">
+                                <span>Backup System</span>
+                                <span class="status online">Online</span>
+                            </div>
+                            <div class="status-item">
+                                <span>Security</span>
+                                <span class="status online">Active</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3>Recent Activities</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <span>New student registration</span>
+                                <span class="activity-time">30 mins ago</span>
+                            </div>
+                            <div class="activity-item">
+                                <span>Course schedule updated</span>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                            <div class="activity-item">
+                                <span>System backup completed</span>
+                                <span class="activity-time">4 hours ago</span>
+                            </div>
+                            <div class="activity-item">
+                                <span>User permissions modified</span>
+                                <span class="activity-time">6 hours ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <h3>Quick Actions</h3>
+                    <div class="action-buttons">
+                        <button class="action-btn">Add New User</button>
+                        <button class="action-btn">Create Course</button>
+                        <button class="action-btn">Generate Report</button>
+                        <button class="action-btn">System Settings</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

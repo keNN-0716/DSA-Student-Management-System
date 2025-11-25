@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-body">
+    <nav id="navbar" class="dashboard-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/NewSM_Logo.png" alt="logo">
+                <span>Teacher Portal</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#classes">My Classes</a></li>
+                <li><a href="#students">Students</a></li>
+                <li><a href="#grades">Gradebook</a></li>
+                <li><a href="index.html" class="logout-btn">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="user-info">
+                <div class="user-avatar">👨‍🏫</div>
+                <div class="user-details">
+                    <h3>Dr. Sarah Smith</h3>
+                    <p>Computer Science Dept.</p>
+                    <span class="user-id">ID: TEA2024001</span>
+                </div>
+            </div>
+            
+            <nav class="sidebar-nav">
+                <a href="#overview" class="nav-item active">
+                    <span class="nav-icon">📊</span>
+                    <span>Overview</span>
+                </a>
+                <a href="#classes" class="nav-item">
+                    <span class="nav-icon">📚</span>
+                    <span>My Classes</span>
+                </a>
+                <a href="#students" class="nav-item">
+                    <span class="nav-icon">👥</span>
+                    <span>Students</span>
+                </a>
+                <a href="#grades" class="nav-item">
+                    <span class="nav-icon">📝</span>
+                    <span>Gradebook</span>
+                </a>
+                <a href="#attendance" class="nav-item">
+                    <span class="nav-icon">✅</span>
+                    <span>Attendance</span>
+                </a>
+                <a href="#profile" class="nav-item">
+                    <span class="nav-icon">👤</span>
+                    <span>Profile</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="dashboard-main">
+            <section id="overview" class="dashboard-section active">
+                <div class="section-header">
+                    <h1>Teacher Dashboard</h1>
+                    <p>Welcome back, Dr. Smith! Manage your classes and students.</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon">📚</div>
+                        <div class="stat-info">
+                            <h3>Active Courses</h3>
+                            <span class="stat-number">4</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">👥</div>
+                        <div class="stat-info">
+                            <h3>Total Students</h3>
+                            <span class="stat-number">85</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">📝</div>
+                        <div class="stat-info">
+                            <h3>Assignments Due</h3>
+                            <span class="stat-number">12</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">💬</div>
+                        <div class="stat-info">
+                            <h3>Pending Reviews</h3>
+                            <span class="stat-number">8</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-grid">
+                    <div class="content-card">
+                        <h3>My Courses</h3>
+                        <div class="course-list">
+                            <div class="course-item">
+                                <span>CS101 - Web Development</span>
+                                <span class="student-count">25 students</span>
+                            </div>
+                            <div class="course-item">
+                                <span>CS201 - Database Systems</span>
+                                <span class="student-count">30 students</span>
+                            </div>
+                            <div class="course-item">
+                                <span>CS301 - Algorithms</span>
+                                <span class="student-count">20 students</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="content-card">
+                        <h3>Recent Activity</h3>
+                        <div class="activity-list">
+                            <div class="activity-item">
+                                <span>Graded Web Dev assignments</span>
+                                <span class="activity-time">2 hours ago</span>
+                            </div>
+                            <div class="activity-item">
+                                <span>Posted new lecture materials</span>
+                                <span class="activity-time">1 day ago</span>
+                            </div>
+                            <div class="activity-item">
+                                <span>Updated course syllabus</span>
+                                <span class="activity-time">2 days ago</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
